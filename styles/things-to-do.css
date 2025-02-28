@@ -1,0 +1,38 @@
+
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+}
+
+
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .card:first-child {
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 0;
+    }
+    .card {
+        border-radius: 0;
+    }
+    .card h2 {
+        text-align: center;
+    }
+    .card:first-child {
+        grid-column: span 1;
+    }
+}
+
+

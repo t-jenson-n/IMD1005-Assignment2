@@ -1,0 +1,39 @@
+
+main {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+
+/* h1 {
+    font-size: 80px;
+} */
+
+.card {
+    background: none;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 0;
+    }
+    .card {
+        border-radius: 0;
+    }
+    .card h2 {
+        text-align: center;
+    }
+
+}
+
+.lightMode .card {
+background: none;
+}

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: Noto Sans, sans-serif;
+    font-size: 20px;
+    color: rgb(227, 227, 222);
+    background-color: rgb(26, 26, 2);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+
+header {
+    padding:25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    padding: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: rgb(182, 183, 101);
+
+}
+
+.title {
+    font-size: 60px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(182, 183, 101);
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+}
+
+.title:hover {
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(182, 183, 101);
+}
+
+h2 {
+    font-size: 35px;
+    font-family: Raleway, sans-serif;
+    color: rgb(227, 227, 222);
+}
+
+h3 {
+    font-family: Raleway, sans-serif;
+}
+
+.grid {
+    background-color: (193, 226, 59);
+    display: grid;
+}
+
+.layout {
+    grid-template-rows: 140px auto 75px;
+}
+
+.span {
+    grid-column: span 2;    
+}
+
+.card {
+    background-color: rgba(110, 110, 110, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+button {
+    border: none;
+    font-family: Raleway, sans-serif;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: color 0.25s, border-color 0.25s, background 0.25s;
+    line-height: 1em;
+    color: #eee;
+    background-color: rgba(94, 96, 94, 0.287);
+}
+
+button:hover {
+    background-color: rgb(182, 183, 101);
+    color: rgb(19, 63, 10);
+    transition-duration: 0.4s;
+}
+
+/* to center light/dark mode icon vertically in button*/
+.icon {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* /* .right {
+    float: right;
+}
+
+.left {
+    float: left;
+} */
+
+.center {
+    justify-self: center;
+}
+
+@media screen and (max-width: 760px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 2px;
+    }
+    .layout {
+        grid-template-rows: auto auto 75px;
+    }
+    button{
+        margin: 2px;
+    }
+}
+
+
+
+body.lightMode {
+    color: rgb(32, 32, 32);
+    background-color: rgb(227, 227, 222);
+}
+
+.lightMode footer {
+    color: #031402;
+    background-color: rgba(193, 194, 188);
+}
+
+.lightMode .title {
+    color: rgb(19, 63, 10);
+}
+
+.lightMode h1 {
+    font-size: 60px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(14, 14, 14);
+}
+
+.lightMode h2 {
+    color: rgb(18, 18, 18);
+}
+
+.lightMode button {
+    color: rgb(50, 60, 12);
+    background-color: rgb(193, 194, 188);
+}
+
+.lightMode button:hover {
+    background-color: rgb(19, 63, 10);
+    color: rgb(193, 194, 188);
+    transition-duration: 0.4s;
+}
+
+.lightMode .title:hover {
+    color: rgb(140, 140, 140);
+    text-decoration: none;
+}
+
+.lightMode .card {
+    background-color: rgb(193, 194, 188);
+    border-radius: 10px;
+    padding: 20px;
+}
