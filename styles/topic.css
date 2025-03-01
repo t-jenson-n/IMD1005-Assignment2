@@ -5,8 +5,7 @@ main {
 }
 
 
-
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 860px) {
     main {
         grid-template-columns: 1fr;
@@ -20,5 +19,4 @@ main {
     .card h2 {
         text-align: center;
     }
-
 }
