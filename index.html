@@ -16,11 +16,12 @@
 <body class="grid layout">
     
     <header>
+        <a href="#main" class="skip">Skip to main content</a>
         <a class="title" href="index.html"> Iceland</a>
         <nav>  
             <a href="gallery.html"><button>Gallery</button></a> 
             <a href="things-to-do.html"> <button>Things to Do</button></a>
-            <a href="topic.html"> <button>Topic</button></a>
+            <a href="topic.html"> <button>Artist Residencies</button></a>
         </nav>
         <button class="icon" onclick="ToggleLightkMode()">
             <span id="btn_lightmode" class="material-symbols-outlined"> light_mode
@@ -28,38 +29,42 @@
         </button>
     </header>
 
-    <main>
+    <main id="main">
         <div class="center span card">
-            <img src="https://dummyimage.com/600x400/000/fff" width= "1000px" alt="">
+            <img class= "wide" src="images/landscape1.avif" alt="Grassy landscape of Iceland green northern lights in the sky">
         </div>
-        <div class="span card">
-            <h1>Welcome to Iceland!</h1>        
-        </div>
-        <div class="card">
-            <h2>Article title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores excepturi autem aspernatur inventore minima sapiente, neque dolore eos quos culpa perferendis ad accusantium illo cumque consequuntur, velit optio! At, vel!</p>
-        </div>
-        <div class="card">
-            <img src="https://dummyimage.com/600x400/000/fff" alt="">
-        </div>
-        <div class="card">
-            <h2>Article title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores excepturi autem aspernatur inventore minima sapiente, neque dolore eos quos culpa perferendis ad accusantium illo cumque consequuntur, velit optio! At, vel!</p>
-        </div>
-        <div class="card">
-            <img src="https://dummyimage.com/600x400/000/fff" alt="">
-        </div>
-        <div class="card">
-            <h2>Article title</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores excepturi autem aspernatur inventore minima sapiente, neque dolore eos quos culpa perferendis ad accusantium illo cumque consequuntur, velit optio! At, vel!</p>
+        <section class="span"> 
+            <div class="span card">
+                <h1>Welcome to Iceland!</h1>        
+            </div>
+            <div class="card">
+                <img class="small" src="images/house-landscape.jpg" alt="Landscape of houses in the capital city of Iceland">
+            </div>
+            <div class="card">
+                <h2>Reykjavík</h2>
+                <p>The capital, Reykjavík (“Bay of Smokes”), is the site of the island's first farmstead and is a thriving city, handsome in aspect and cosmopolitan in outlook. Other major population centres are Akureyri, on the north-central coast; Hafnarfjördhur, on the southwestern coast; and Selfoss, in the southern lowlands.</p>
+            </div>
+            <div class="card">
+                <img class="small" src="images/map.gif" alt="Map of Iceland">
+            </div>
+            <div class="card">
+                <h2>About the Land</h2>
+                <p>Glacier ice and cooled lava each cover approximately one-tenth of the country's total area. The glaciers are a reminder of Iceland's proximity to the Arctic Circle, which nearly touches its northernmost peninsula. The area covered by Vatnajökull (Vatna Glacier), the country's largest, is equal to the combined total area covered by all the glaciers on the continent of Europe. The volcanoes, reaching deep into the unstable interior of the Earth, are explained by the fact that Iceland is located on top of the Mid-Atlantic Ridge. It is estimated that since the year 1500 about one-third of the Earth's total lava flow has poured out of the volcanoes of Iceland.</p>
+            </div>
         </div>
         <div class="card">
-            <img src="https://dummyimage.com/600x400/000/fff" alt="">
+            <img class="small" src="images/flag.jpg" alt="Blue, Red and White Flag of Iceland">
         </div>
+            <div class="card">
+                <h2>The Flag</h2>
+                <p>It was designed by Matthias Thordarson. The colours have no official symbolism but one popular modern interpretation is that they represent the three elements that created the island: fire, ice and water. The combination of the traditional Icelandic colours blue and white with red reflects historical links with Norway.</p>
+
+    
+        </section>
     </main>
 
     <footer>
-        Tyler Nykilchyk 2025
+        Tyler Nykilchyk 2025 | Information from Britannica.com
     </footer>
 
     <script src="scripts/light-mode.js"></script>

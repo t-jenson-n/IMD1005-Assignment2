@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
 body {
     font-family: Noto Sans, sans-serif;
@@ -124,7 +132,7 @@ a {
     justify-self: center;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 860px) {
     header {
         display: flex;
         flex-wrap: wrap;
@@ -146,7 +154,7 @@ body.lightMode {
 }
 
 .lightMode footer {
-    color: #031402;
+    color: #031902;
     background-color: rgba(193, 194, 188);
 }
 
