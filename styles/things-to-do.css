@@ -2,6 +2,14 @@
 main {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: start;
+    max-width: 1200px;
+
+}
+
+.card.title {
+    background: none;
+    display: flex;
+    align-self: center;
 }
 
 
@@ -9,6 +17,9 @@ main {
 @media screen and (max-width: 900px) {
     main {
         grid-template-columns: 1fr 1fr;
+    }
+    .card:last-child {
+        grid-column: span 2;
     }
 }
 
@@ -27,13 +38,13 @@ main {
     }
     .card {
         border-radius: 0;
+        grid-column: span 2;
+
     }
     .card h2 {
         text-align: center;
     }
-    .card:first-child {
-        grid-column: span 1;
-    }
+
 }
 
 

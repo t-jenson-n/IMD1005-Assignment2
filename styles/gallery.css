@@ -46,10 +46,13 @@ main {
     background: none;
 }
 
-
 /* DARK MODE */
 .darkMode .card {
     background: none;
+}
+
+.darkMode h1 {
+    color: rgb(236, 236, 236);
 }
 
 
